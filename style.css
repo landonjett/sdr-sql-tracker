@@ -1,0 +1,98 @@
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #e5eaf5; /* Freeze Purple as the main background */
+    color: #333; /* Darker text for better contrast */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center container contents horizontally */
+}
+
+.input-group {
+    display: flex;
+    align-items: center; /* Center input group vertically */
+    width: 100%; /* Ensure the input group takes full width */
+    margin: 0 auto; /* Center input group horizontally */
+    margin-bottom: 10px; /* Space between input groups */
+}
+
+.input-group label {
+    width: 40%; /* Set width for label */
+    text-align: right; /* Align the text to the right */
+    margin-right: 10px; /* Space between label and input */
+}
+
+.input-group input {
+    width: 50%; /* Set width for input */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+button {
+    background-color: #d0bdf4; /* Medium Purple */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Space above the button */
+    width: 50%; /* Button width relative to the container */
+    align-self: center; /* Center button */
+}
+
+button:hover {
+    background-color: #a0d2eb; /* Ice Cold */
+}
+
+#progressText, #workingDaysLeft, #requiredSQLsPerDay {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Media Queries for Tablet and Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group label {
+        width: 100%;
+        text-align: left;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .input-group input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

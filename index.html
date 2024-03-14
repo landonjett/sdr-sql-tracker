@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+</head>
+<body>
+    <div class="container">
+        <h2>SQL Tracker</h2>
+        <div class="input-group">
+            <label for="goal">Monthly Goal:</label>
+            <input type="number" id="goal">
+        </div>
+        <div class="input-group">
+            <label for="currentSQLs">Current SQLs:</label>
+            <input type="number" id="currentSQLs">
+        </div>
+        <div class="input-group">
+            <label for="outOfOfficeDays">OOO Days:</label>
+            <input type="number" id="outOfOfficeDays" value="0">
+        </div>
+        <button id="calculate">Calculate Progress</button>
+        <div id="progressText"></div>
+        <div id="workingDaysLeft"></div>
+        <div id="requiredSQLsPerDay"></div>
+        <canvas id="progressChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
